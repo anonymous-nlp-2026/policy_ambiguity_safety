@@ -2,6 +2,10 @@
 
 Code and data for "Policy Ambiguity Is Nocuous: Clause-Level Causal Effects on Customer-Service Agent Safety" (EMNLP 2026 submission).
 
+## Abstract
+
+LLM-based agents increasingly operate under natural-language policy specifications that inevitably contain ambiguity, yet no prior work causally links ambiguity to safety violations. Using a matched-pair design on τ²-bench with 300 clause pairs spanning a six-type taxonomy evaluated across five frontier models, we show that ambiguous clauses increase violations by +34.0 percentage points, an effect that generalizes directionally across benchmarks, domains, and model families. Ambiguity *type* predicts *how* agents fail—each type maps to a dominant failure mechanism—but not *whether* they fail, orienting the taxonomy as a diagnostic instrument rather than a risk classifier. Error analysis reveals that agents almost never recognize ambiguity and converge on identical permissive violations across architecturally diverse models, a phenomenon we term *convergent nocuity*: agreement-based safety monitoring is blind to these systematic errors. These findings motivate clause-level policy auditing over type-level risk screening.
+
 ## Setup
 
 ```bash
