@@ -1,6 +1,6 @@
 # Policy Ambiguity Is Nocuous
 
-Code and data for "Policy Ambiguity Is Nocuous: Clause-Level Causal Effects on LLM Agent Safety" (EMNLP 2026 submission).
+Code and data for "Policy Ambiguity Is Nocuous: Clause-Level Causal Effects on Customer-Service Agent Safety" (EMNLP 2026 submission).
 
 ## Setup
 
@@ -83,13 +83,13 @@ python artifacts/prevalence_audit/compute_stats.py
 ### Figures
 ```bash
 python artifacts/figures/paper/gen_fig1_overview.py
-python artifacts/figures/paper/gen_fig2_forest_plot.py
 python artifacts/figures/paper/gen_fig3_heatmap_5model.py
+# gen_fig2_forest_plot.py retained for completeness but fig2 was removed from the final paper
 ```
 
 ## Data
 
-- `artifacts/clause_templates_full.json` — Full set of 300 clause pairs (5 ambiguity types)
+- `artifacts/clause_templates_full.json` — Full set of 300 clause pairs (6 ambiguity types)
 - `artifacts/clauses_*.json` — Clause subsets by type and experiment phase
 - `artifacts/sopbench/data/` — SOPBench task data (7 domains)
 - `artifacts/human_annotation/` — Annotation sheets, codebook, and annotator responses
